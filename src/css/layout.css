@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Aclonica', sans-serif;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  display: flex;
+}
+#root {
+  width: 100%;
+max-width: 100%;
+min-width: 100%;
+display: flex;
+}
+
+.text-align {
+  text-align: center;
+}
+
+.layout {
+  width: 100vw;
+  height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom right, #6f015d, #b55d5d);
+  color: white;
+  text-align: center;
+  padding: 2em;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 1000;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 600;
+}
