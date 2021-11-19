@@ -18,8 +18,8 @@ Here is how to working inside of the React Apps
 
   - Now run the build. This buiild is required only once or if you had cleaned the build folder
 
-        npm webpack
+        npm run build
 
   - Start the admin server using the below command
 
-        npm start
+        npm run start
