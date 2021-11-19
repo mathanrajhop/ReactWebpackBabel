@@ -1,14 +1,14 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: path.join(__dirname, "src", "index.js"),
-    output: { path: path.join(__dirname, "build"), filename: "index.bundle.js" },
-    mode: process.env.NODE_ENV || "development",
-    resolve: { modules: [path.resolve(__dirname, "src"), "node_modules"] },
-    devServer: { static: path.join(__dirname, "src") },
-    module: {
-        rules: [
+  entry: path.join(__dirname, "src", "index.js"),
+  output: {
+    path:path.resolve(__dirname, "dist"),
+  },
+  mode: process.env.NODE_ENV || "development",
+  module: {
+    rules: [
             {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
@@ -23,10 +23,10 @@ module.exports = {
                 use: ["file-loader"]
             },
         ],
-    },
-    plugins: [
-        new HtmlWebpackPlugin({
-            template: path.join(__dirname, "public", "index.html"),
-        }),
-    ],
-};
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, "public", "index.html"),
+    }),
+  ],
+}
